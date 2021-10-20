@@ -1,8 +1,15 @@
 <template>
   <div id="nav">
     <router-link :to="{ name: 'EventList' }">Home</router-link> |
-    <router-link :to="{ name: 'About' }">About</router-link>
-  </div>
+    <router-link :to="{ name: 'About' }">About</router-link> |
+    <span id="lang">
+      <label for="locale">{{ $t('common.language') }}: </label>
+      <select v-model="$i18n.locale">
+        <option value="en-US">英文 (English)</option>
+        <option value="zh-TW">中文 (Chinese)</option>
+      </select>
+    </span>
+  </div>  
   <router-view />
 </template>
 
