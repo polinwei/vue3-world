@@ -11,8 +11,9 @@ import { createI18n } from 'vue-i18n'
 const { locale, availableLocales, fallbackLocale } = config.locales
 const messages = {}
 
-availableLocales.forEach((l) => { messages[l.code] = l.messages })
-
+availableLocales.forEach((l) => {
+  messages[l.code] = l.messages
+})
 
 // 2. Create i18n instance with options
 export const i18n = createI18n({

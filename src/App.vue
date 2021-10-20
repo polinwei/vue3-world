@@ -9,7 +9,9 @@
         <option value="zh-TW">中文 (Chinese)</option>
       </select>
     </span>
-  </div>  
+    |
+    <a href="https://github.com/polinwei/vue3-world">polinwei/vue3-world</a>
+  </div>
   <router-view />
 </template>
 

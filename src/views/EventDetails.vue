@@ -1,6 +1,6 @@
 <template>
   <div v-if="event">
-    <h2> Event #{{$route.params.id}} </h2>
+    <h2>{{ $t('event.id') }} #{{ $route.params.id }}</h2>
     <h1>{{ event.title }}</h1>
     <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
     <p>{{ event.description }}</p>
@@ -13,21 +13,19 @@ export default {
   props: ['id'],
   data() {
     return {
-      event: null
+      event: null,
     }
   },
   created() {
     EventService.getEvent(this.id)
-    .then((res) => {
-      this.event = res.data
-    })
-    .catch((error) => {
-      console.log(error)
-    })
-  }
+      .then((res) => {
+        this.event = res.data
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  },
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

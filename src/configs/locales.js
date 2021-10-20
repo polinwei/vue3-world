@@ -22,15 +22,18 @@ export default {
   fallbackLocale: 'en-US',
 
   // availabled locales for user selection
-  availableLocales: [{
-    code: 'en-US',
-    flag: 'us',
-    label: 'English',
-    messages: enUS
-  }, {
-    code: 'zh-TW',
-    flag: 'tw',
-    label: '中文-繁',
-    messages: zhTW
-  }]
+  availableLocales: [
+    {
+      code: 'en-US',
+      flag: 'us',
+      label: 'English',
+      messages: enUS,
+    },
+    {
+      code: 'zh-TW',
+      flag: 'tw',
+      label: '中文-繁',
+      messages: zhTW,
+    },
+  ],
 }

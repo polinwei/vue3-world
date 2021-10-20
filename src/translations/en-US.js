@@ -1,12 +1,12 @@
 export default {
   common: {
     id: 'Id',
-    language: 'Language'
+    language: 'Language',
   },
   event: {
     id: 'Event ID',
     title: 'Title',
     time: 'Time',
-    date: 'Date' 
-  }
+    date: 'Date',
+  },
 }
