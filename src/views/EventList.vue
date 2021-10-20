@@ -21,8 +21,8 @@ export default {
   },
   created() {
     EventService.getEvents()
-      .then((res)=>{
-        this.events =  res.data
+      .then((res) => {
+        this.events = res.data
       })
       .catch((error) => {
         console.log(error)
